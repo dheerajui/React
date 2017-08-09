@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>call_later</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10.5" cy="10.5" r="10.5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1.725" y="-1.725" width="24.45" height="24.45">
+            <rect x="-1.725" y="-1.725" width="24.45" height="24.45" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="L---Template-Copy-28" transform="translate(-112.000000, -1189.000000)">
+            <g id="Group-5" transform="translate(45.000000, 1130.000000)">
+                <g id="call_later" transform="translate(69.000000, 61.000000)">
+                    <use id="Oval-53" stroke="#28A33F" mask="url(#mask-2)" stroke-width="3.45" xlink:href="#path-1"></use>
+                    <g id="Group" transform="translate(9.333333, 3.500000)"></g>
+                    <polyline id="Path-2" stroke="#28A33F" stroke-width="2.07" points="9.93105062 2.91666667 9.93105062 11.6467056 17.5 11.6666667"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

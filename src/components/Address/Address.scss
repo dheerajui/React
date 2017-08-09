@@ -1,0 +1,36 @@
+@import '../../styles/core';
+
+$WORD_SPACE: 2px;
+
+.address {
+
+ @include typography(shipping-address);
+
+  .first-name, .last-name {
+    display: inline-block;;
+    padding-right: $WORD_SPACE,
+  }
+
+  .city {
+    display: inline-block;
+
+    &::after {
+      content: ',';
+      display: inline-block;
+      padding-right: $WORD_SPACE;
+    }
+  }
+
+  .state {
+    display: inline-block;;
+    padding-right: $WORD_SPACE;
+  }
+
+  .postal-code {
+    display: inline-block;
+  }
+
+  .country {
+
+  }
+}

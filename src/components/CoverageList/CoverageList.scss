@@ -1,0 +1,24 @@
+@import '../../styles/core';
+
+.no-coverage {
+  text-align: center;
+  margin-top: 76px;
+  margin-bottom: 88px;
+  box-sizing: border-box;
+  color: swatch(icon);
+}
+.coverage-list {
+  .coverage-disclaimer {
+    margin-top: 42px;
+
+    .sosumi {
+      @include typography(sosumi); 
+      font-size: 11px !important; // base.css has !important hence need this to override
+      color: swatch(icon);
+
+      font {
+        color: swatch(icon);
+      }
+    }
+  }
+}

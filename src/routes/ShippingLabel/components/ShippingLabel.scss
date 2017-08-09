@@ -1,0 +1,110 @@
+@import '../../../styles/core';
+
+.shipping-label-wrapper {
+  width   : 484px;
+  margin   : 0 auto;
+  @include typography(shipping-address-header);
+}
+.shipping-label{
+  width   : 442px;
+  border   : 1px dashed #888;
+  padding  : 20px;
+  font-weight: 600;
+
+  .header img {
+    width: 100%;
+    margin: 0;
+  }
+  .header-main{
+    padding-top : 15px;
+    padding-bottom: 4px;
+    font-weight : bold;
+    text-align  :  center;
+    @include typography(shipping-address-header);
+    margin: 0;
+  }
+  .header-sub{
+    padding-top   : 5px;
+    font-size     : 14px;
+    margin-left   : 5px;
+    text-align    : center;
+    margin-bottom : 10px;
+  }
+  .delivery-instuction-head {
+    @include typography(shipping-address-header);
+  }
+  .delivery-instuction-body {
+    @include typography(shipping-address);
+  }
+  .post-to-address{
+    margin-bottom : 20px;
+
+    .header-send-to{
+      text-align  : left;
+      @include typography(shipping-address-header);
+    }
+  }
+  .post-from-address{
+    margin-top: 35px;
+    margin-bottom : 14px; 
+    @include typography(shipping-address);
+
+    .header-sender{
+      text-align  : left;
+      margin-left : 10px;
+      @include typography(shipping-address-header);
+    }
+  }
+  .signature-block {
+    text-align  : center;
+    margin-top  : 9px;
+    @include typography(shipping-address);
+  }
+  .barcode-wrapper{
+    text-align  : center;
+    margin      : 0px auto;
+    margin-top  : 20px;
+    img{
+      width: 70%;
+    }
+  }
+  .barcode-image{
+    @include typography(shipping-address-header);
+    padding-top : 4px;
+  }
+  
+  .articleId{
+    padding-top:5px;
+  }
+}
+.shipping-label-notes {
+  padding: 20px 20px 0;
+
+  .please-note {
+    font-weight: 600;
+    margin-bottom: 15px; 
+    margin-top: -9px;
+  }
+  ul {
+    margin-left: 13px;
+    list-style-position: outside;
+    list-style: initial;
+  }
+  li {
+    list-style-position: outside;
+    line-height: 1.3;
+  }
+}
+.shipping-label-instructions {
+  
+    padding: 0 9px;
+    text-align: center;
+    margin: 23px 23px 1px;
+    @include typography(shipping-address-header);
+    letter-spacing: normal;
+
+  .cutting-instructions {
+    margin-top: 15px;
+    @include typography(shipping-instr);
+  }
+}

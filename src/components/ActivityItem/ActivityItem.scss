@@ -1,0 +1,136 @@
+@import '../../styles/core';
+
+.activity-item {
+  display: table;
+  width: 100%;
+  padding: 58px 0 0;
+  margin: 0 auto;
+  border-bottom: 1px solid swatch(keyline);
+
+  &.hide {
+    display: none;
+  }
+  @include viewport(small) {
+    padding-top: 48px;
+  }
+  &:first-child {
+    padding-top: 51px;
+    @include viewport(small) {
+      padding-top: 42px;
+    }
+  }
+  &:last-child {
+    margin-bottom: 45px;
+    @include viewport(small) {
+      margin-bottom: 24px;
+    }
+  }
+  .activity-header-row {
+    border-bottom: 1px solid swatch(keyline);
+  }
+  .activity-item-row {
+    margin-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid swatch(keyline);
+    position: relative;
+
+    &:last-child {
+      border: none;
+    }
+    span.icon {
+      position: absolute;
+      left: 51px;
+
+      @include viewport(medium) {
+        left: 41px;
+      }
+      @include viewport(small) {
+        left: 0;
+      }
+
+      &.RET,
+      &.SCB,
+      &.ASPR {
+        width: 27px;
+        height: 27px;
+        background-image: url(./images/call_later.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: left center;
+
+        @include viewport(small) {
+          & + .activity-subheader {
+            padding-top: 31px;
+          }
+        }
+      }
+      &.has-alert {
+        width: 27px;
+        height: 27px;
+        font-size: 18px;
+        font-weight: 400;
+        @include icon(exclamationcircle, before);
+        color: #F46C0E;
+
+        @include viewport(small) {
+          & + .activity-subheader {
+            padding-top: 31px;
+          }
+        }
+      }
+    }
+  }
+  .left-col {
+    display: table-cell;
+    vertical-align: middle;
+    width: 345px;
+    padding-right: 60px;
+    padding-left: 80px;
+
+    @include viewport(medium) {
+      width: 300px;
+      padding-right: 60px;
+      padding-left: 70px;
+    }
+
+    @include viewport(small) {
+      display: block;
+      width: auto;
+      padding: 0;
+    }
+  }
+  .right-col {
+    display: table-cell;
+    vertical-align: middle;
+    width: 215px;
+    text-align: right;
+
+    @include viewport(medium) {
+      width: 187px;
+    }
+
+    @include viewport(small) {
+      display: block;
+      width: auto;
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+  .activity-header {
+    @include typography(label);
+      margin-bottom: 18px;
+
+    @include viewport(small) {
+      margin-bottom: 16px;
+    }
+  }
+  .activity-subheader {
+    font-weight: 600;
+  }
+  .activity-details {
+    .activity-link {
+      color: swatch(blue);
+      text-decoration: none;
+    }
+  }
+}

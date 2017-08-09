@@ -1,0 +1,31 @@
+@import '../../../styles/core';
+
+#ac-gn-placeholder {
+  margin-bottom: 0;
+}
+
+@mixin get-content($viewport) {
+  @include viewport($viewport) {
+    max-width: viewport-content-for($viewport);
+    width: viewport-content-for($viewport);
+  }
+}
+
+.basic-layout__viewport {
+  margin-bottom: 72px;
+
+  /* Use this class for limiting the width of a section based on viewport */
+  .content-area {
+
+    margin: 0 auto;
+    @include get-content(large);
+    @include get-content(medium);
+    @include get-content(small);    
+  }
+  & + .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+

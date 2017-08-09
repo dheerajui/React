@@ -1,0 +1,111 @@
+@import '../../styles/core';
+
+.coverage-item {
+  width: 100%;
+  padding-top: 14px;
+  margin: 0 auto;
+  position: relative;
+
+  .coverage-icon.icon {
+    position: absolute;
+    left: 0;
+    font-size: 36px;
+    padding-top: 3px;
+
+    &.green {
+      color: #28A33F;
+    }
+    &.yellow {
+      color: #E9B72A;
+    }
+    &.blue {
+      color: swatch(blue);
+    }
+    @include viewport(small) {
+      top: 17px;
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+  &:first-child {
+    border: none;
+  }
+  & + .coverage-item {
+    @include viewport(small) {
+      padding-top: 26px;
+
+      .coverage-icon.icon {
+        top: 28px;
+      }
+    }
+  }
+  .coverage-details {
+    width: auto;
+    padding-left: 64px;
+    padding-top: 15px;
+
+    @include viewport(small) {
+      padding-left: 0;
+      padding-top: 70px;
+    }
+
+    .coverage-subheader h3 {
+      @include typography(label);
+      padding-bottom: 15px;
+
+      @include viewport(small) {
+        padding-bottom: 9px;
+      }
+    }
+    .coverage-details-wrapper{
+      position: relative;
+
+      .coverage-details-text {
+        @include typography(body-semibold);
+      }
+
+      .coverage-description {
+        @include typography(body-short);
+
+        a:not(.inline) {
+          @include icon(chevronright, after);
+          display: inline-block;
+          margin-top: 10px;
+          &:after {
+            display: inline;
+          }
+        }
+        .sosumi {
+          font-size: 11px !important; // base.css has important hence need this to override
+        }
+      }
+    }
+
+    .coverage-actions {
+      margin-top: 6px;
+      @include viewport(small) {
+        margin-top: 10px;
+      }
+    }
+
+    .view-poc,
+    .section-button {
+      color: swatch(blue);
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+
+      @include viewport(small) {
+        white-space: pre-wrap;
+      }
+  }
+    .coverage-link {
+      color: swatch(blue);
+      text-decoration: none;
+    }
+  }
+}

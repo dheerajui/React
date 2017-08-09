@@ -1,0 +1,45 @@
+@import '../../styles/core';
+
+.no-history,
+.activity-error {
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
+  color: swatch(icon);
+  @include viewport(small) {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+.activity-error {
+  color: #888;
+}
+.empty-area {
+  margin-top: 80px;
+}
+.see-more-link {
+  text-align: center;
+  margin-top: 56px;
+
+  @include viewport(small) {
+    margin-top: 32px;
+  }
+
+  button {
+    color: swatch(blue);
+    padding: 0 26px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.fetching-more {
+  margin: 31px auto 0;
+  width: 30px;
+  height: 30px;
+}
+.activity-wrapper {
+  margin-top: 0;
+}

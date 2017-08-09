@@ -1,0 +1,21 @@
+@import '../../../styles/core';
+
+.all-history-page {
+  .heading {
+    text-align: center;
+
+    .page-title {
+      margin-bottom: 24px;
+      @include viewport(small) {
+        margin-bottom: 34px;
+      }
+    }
+  }
+
+  .all-activities {
+    margin-top: 17px;
+  }
+  .divider + section {
+    padding-top: 36px;
+  }
+}
